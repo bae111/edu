@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트 태그와 float</title>
+    <style>
+        /* 1번째, 리스트 태그 스타일 없애기*/
+        /* ol{
+            list-style: none;
+        }
+        ul{
+            list-style: none;
+        }
+        ol,ul{
+            list-style: none;
+        } */
+
+        /* 2번째, div 태그 백그라운드 컬러를 빼면 기본 투명이라 아무것도 안나옴*/
+        /* div{
+            width: 400px;
+            height: 400px;
+            background-color: #f00;
+        } */
+
+        /* 3번째, 바둑판 만들기-1
+        인라인블럭을 줄 경우 여백이 생기기 때문에 width : 800px주면 4개가 한 줄이 놓이지 못함*/
+        /* ul{
+            list-style: none;
+            width: 850px;
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            display: inline-block;
+        } */
+        
+        /* 3번째, 바둑판 만들기-2
+        여백을 없애기 위해 float 사용 
+        content: ""; = 콘텐츠가 있긴 한데 자리만 만들겠다
+        display: block; = 블럭태그의 기본 속성 width가 부모 기준 100%
+        clear: both; = float 양 옆의 값을 모두 지운다
+        ::after를 쓰지 않을 경우,
+        float가 떠 있기 때문에 ul 태그가 높이를 인식하지 못하고 0 으로 나오게 됨*/
+        /* ul{
+            list-style: none;
+            width: 800px;
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            float: left;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        } */
+        
+        /* 3번째, 바둑판 만들기-3*/
+        ul{
+            list-style: none;
+            width: 800px;
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            float: left;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /*첫번째와 마지막의 색 변환*/
+        /* ul li:first-child{
+            background-color: #ff0000;
+        }
+        ul li:last-child{
+            background-color: #ff0000;
+        } */
+        
+        /*특정 위치에 색 변환*/
+        /* ul li:nth-child(1),
+        ul li:nth-child(3),
+        ul li:nth-child(6),
+        ul li:nth-child(8),
+        ul li:nth-child(9),
+        ul li:nth-child(11),
+        ul li:nth-child(14),
+        ul li:nth-child(16){
+            background-color: #ffffff;
+        } */
+
+        ul li:nth-child(odd){ /*홀수*/
+            background-color: #ff0000;
+        }
+        ul li:nth-child(even){ /*짝수*/
+            background-color: #fff000;
+        }
+        ul li:nth-child(2n){ /*2의배수*/
+            background-color: #008000;
+        }
+        ul li:nth-child(4n-1){ /*3의배수(4의배수에서 1이 빠진 수), 연산이 가능하다*/
+            background-color: #fff;
+        }
+        ul li:hover{
+            background-color: #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번째, ol, ul, li 태그 -->
+    <!-- <ol>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+        <li>리스트5</li>
+    </ol>
+    <ul>
+        <li>리스트1</li>
+        <li>리스트2</li>
+        <li>리스트3</li>
+        <li>리스트4</li>
+        <li>리스트5</li>
+    </ul> -->
+
+    <!-- 2번째, div 태그-->
+    <!-- <div></div> -->
+
+    <!-- 3번째, 바둑판 만들기-1 -->
+    <!-- <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul> -->
+
+    <!-- 3번째, 바둑판 만들기-2,3 -->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+    </ul>
+</body>
+</html>

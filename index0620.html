@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>부모태그와 자식태그</title>
+    <style>
+    /* 2번째, div 안에 있는 p태그-1 div에 색을 주어도 p 태그에 색이 들어간다*/
+        /* div{
+            color: #f00;
+        } */
+    /* 2번째, div 안에 있는 p태그-2 p 태그에 직접 색을 지정*/
+        /* p{
+            color: #f00;
+        } */
+    /* 3번째, div 안에 p 안에 a 태그-1*/
+    /*모든 div 안에 모든 p 안에 모든 a에 검은색 명령
+    a태그 1 = div > p > a = 적용됨
+    a태그 2 = div > a = 적용 안됨(p안에 있는 a가 아니니까)*/
+        /* div p a{
+            color: #000;
+        } */
+    /* 3번째, div 안에 p 안에 a 태그-2*/
+    /*모든 div 안에 모든 a에 검은색 명령
+    a 1 = div > p > a = 적용됨
+    a 2 = div > a = 적용됨*/
+        /* div a{
+            color: #000;
+        } */
+    /* 3번째, div 안에 p 안에 a 태그-2*/
+    /*모든 a에 검은색 명령
+    a 1 = div > p > a = 적용됨
+    a 2 = div > a = 적용됨*/
+        /* a{
+            color: #000;
+        } */
+    /*4가지 유형 연습*/
+    /*p 안에 a에게 검은색 명령
+    4-1 div > p > a = 적용됨
+    4-2 div > a = 적용 안됨
+    4-3 p > a = 적용됨
+    4-4 a = 적용 안됨*/
+    p a{
+        color: #000;
+    }
+    </style>
+</head>
+<body>
+    <!-- 1번째, div 안에 있는 a태그 -->
+    <!-- <div>
+        <a href="https://www.naver.com" target="_blank">나는 div 안에 있는 a 태그다</a>
+    </div>
+    <div>
+        <a href="https://www.naver.com" target="_blank">나는 div 안에 있는 a 태그다</a>
+    </div>
+    <div>
+        <a href="https://www.naver.com" target="_blank">나는 div 안에 있는 a 태그다</a>
+    </div> -->
+
+    <!-- 2번째, div 안에 있는 p태그 -->
+    <!-- <div>
+        <p>나는 p 태그야</p>
+    </div> -->
+
+    <!-- 3번째, div 안에 p 안에 a태그 -->
+    <!-- <div>
+        <p>
+            <a href="#">나는 div 안에 p 안에 a 태그 1</a>
+        </p>
+    </div>
+    <div>
+        <a href="#">나는 div 안에 a 태그</a>
+    </div> -->
+
+    <!-- 4번째 연습-->
+    <div>
+        <p>
+            <a href="#">div 안에 p 안에 a 태그</a>
+        </p>
+    </div>
+    <div>
+        <a href="#">div 안 a 태그</a>
+    </div>
+    <p>
+        <a href="#">p 안 a 태그</a>
+    </p>
+    <a href="#">a 태그</a>
+</body>
+</html>
