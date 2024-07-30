@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+        /* 1번째, 바둑판에 트렌지션*/
+        /* ul{
+            list-style: none;
+            width: 800px;
+        }
+        ul li{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            float: left;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;
+            transition-delay: 1s;
+            transition: all 1s linear 1s;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul li:nth-child(1),
+        ul li:nth-child(3),
+        ul li:nth-child(6),
+        ul li:nth-child(8),
+        ul li:nth-child(9),
+        ul li:nth-child(11),
+        ul li:nth-child(14),
+        ul li:nth-child(16){
+            background-color: #ffffff;
+        }
+        ul li:hover{
+            background-color: #ff0000;
+        } */
+
+        /* 2번째, 늘어나는 상자*/
+        /* div{
+            width: 100px;
+            height: 100px;
+            background-color: #000000;
+            transition: all 1s linear;
+        }
+        div:hover{
+            background-color: #ff0000;
+            width: 600px;
+        } */
+
+        /* 3번째, 메뉴 아래 언더바 늘어나기*/
+        ul{
+            list-style: none;
+        }
+        ul li{
+            float: left;
+        }
+        ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        ul li a{
+            display: block;
+            text-decoration: none;
+            background-color: #ffffff;
+        }
+        ul li a:after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 5px;
+            background-color: #ff0000;
+            transition: all 0.6s ease-in-out;
+        }
+        ul li:hover a:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번째, 바둑판에 트렌지션 -->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li>8</li>
+
+        <li>9</li>
+        <li>10</li>
+        <li>11</li>
+        <li>12</li>
+
+        <li>13</li>
+        <li>14</li>
+        <li>15</li>
+        <li>16</li>
+    </ul> -->
+
+    <!-- 2번째, 늘어나는 상자 -->
+    <!-- <div></div> -->
+
+    <!-- 3번째, 메뉴 아래 언더바 늘어나기 -->
+    <ul>
+        <li>
+            <a href="#">메뉴1</a>
+        </li>
+        <li>
+            <a href="#">메뉴2</a>
+        </li>
+        <li>
+            <a href="#">메뉴3</a>
+        </li>
+        <li>
+            <a href="#">메뉴4</a>
+        </li>
+        <li>
+            <a href="#">메뉴5</a>
+        </li>
+    </ul>
+</body>
+</html>
