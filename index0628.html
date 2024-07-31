@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로고와 메뉴2</title>
+    <style>
+        /* 1번째, 가운데 정렬하고 양쪽 여백있는 메뉴*/
+        /* *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+        }
+        div{
+            margin: 0 auto;
+            width: 1280px;
+            background-color: #333;
+        }
+        div ul{
+            margin: 0 auto;
+            width: 80%;
+        }
+        div ul li{
+            float: left;
+            width: 20%;
+            text-align: center;
+        }
+        div ul::after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li a{
+            color: #fff;
+            line-height: 100px;
+            display: block;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        } */
+        
+        /* 2번째, 가운데 정렬하고 메인로고 왼쪽 메뉴, 오른쪽, 양쪽 여백있는 메뉴*/
+        *{                  
+            margin: 0;      
+            padding: 0;     
+            
+        }
+        a{ 
+            text-decoration: none; 
+        }
+        ul{
+            list-style: none; 
+        }
+        div{
+            width: 1280px;  
+            background-color: #333; 
+            margin: 0 auto; 
+        }
+        div > a{ 
+            float: left;  
+            color: #fff;
+            line-height: 100px; 
+            margin-left: 20px; 
+        }
+        div::after{  
+            content: ""; 
+            display: block; 
+            clear: both; 
+        }
+        div ul{     
+            width: 50%; 
+            float: right; 
+            text-align: center; 
+        }
+        div ul li{
+            width: 25%; 
+            float: left; 
+        }
+        div ul:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        div ul li a{
+            color: #fff;
+            line-height: 100px;
+            display: block;
+        }
+        div ul li:hover a{
+            background-color: #fff;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- 1번째, 가운데 정렬하고 메인로고가 가운데 있고 양쪽 여백있는 메뉴 -->
+    <!-- <div>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메인로고</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div> -->
+
+    <!-- 2번째, 가운데 정렬하고 메인로고 왼쪽 메뉴, 오른쪽, 양쪽 여백있는 메뉴 -->
+    <div>
+        <a href="#">메인로고</a>
+        <ul>
+            <li>
+                <a href="#">메뉴1</a>
+            </li>
+            <li>
+                <a href="#">메뉴2</a>
+            </li>
+            <li>
+                <a href="#">메뉴3</a>
+            </li>
+            <li>
+                <a href="#">메뉴4</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
