@@ -1,0 +1,94 @@
+/* *{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+div{
+    width: 400px;
+    text-align: center;
+}
+div h1 a{
+    display: block;
+    color: #fff;
+    background-color: #000;
+    line-height: 100px;
+}
+div > ul > li > a{
+    display: block;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+/*1개밖에 없으니까 꺽새(다이렉트) 생략, 소메뉴봉투*/
+/* div ul li ul{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}      
+div ul li ul li a{
+    display: block;
+    background-color: #ccc;
+    color: #000;
+    line-height: 50px;
+} */
+/*div 바로아래 ul 바로아래 li가 hover 될 때 그 안의 ul에게 명령*/
+/* div > ul > li:hover ul{
+    height: 250px;
+}
+div > ul > li:hover > a,
+div ul li ul li:hover a{
+    background-color: #fff;
+    color: #333;
+} */
+
+/*id와 class 사용*/
+*{
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    width: 400px;
+    text-align: center;
+}
+#wrap h1 a{
+    display: block;
+    color: #fff;
+    background-color: #000;
+    line-height: 100px;
+}
+#wrap .depth-01 > li > a{
+    display: block;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+#wrap .depth-02{
+    height: 0;
+    overflow: hidden;
+    transition: all 0.6s ease-in-out;
+}
+#wrap .depth-02 li a{
+    display: block;
+    background-color: #ccc;
+    color: #000;
+    line-height: 50px;
+}
+#wrap .depth-01 > li:hover .depth-02{
+    height: 250px;
+}
+#wrap .depth-01 > li:hover > a,
+#wrap .depth-02 li:hover a{
+    background-color: #fff;
+    color: #333;
+}
