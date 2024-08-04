@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex </title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+            width: 90%;
+            display: flex;
+            justify-content: flex-start;
+            margin: 0 auto;
+            align-items: center;
+            text-align: center;
+            gap: 40px;
+        }
+        ul li{
+            width: 20%;
+        }
+        ul li:nth-child(1){
+            height: 200px;
+            background-color: brown;
+            font-size: 20px;
+        }
+        ul li:nth-child(2){
+            height: 500px;
+            background-color: aquamarine;
+            font-size: 40px;
+        }
+        ul li:nth-child(3){
+            height: 100px;
+            background-color: blueviolet;
+            font-size: 60px;
+        }
+        ul li:nth-child(4){
+            height: 300px;
+            background-color: chartreuse;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>flex item 1</li>
+        <li>flex item 2</li>
+        <li>flex item 3</li>
+        <li>flex item 4</li>
+    </ul>
+</body>
+</html>
