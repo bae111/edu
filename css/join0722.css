@@ -1,0 +1,18 @@
+input[type="text"]{
+    width: 300px;
+    outline: none;
+    text-indent: 3em; /*들여쓰기*/
+    letter-spacing: 2px; /*자간*/
+}
+span[class="form-title"]{ /*[]는 태그의 속성으로 부를 수 있다*/
+    display: block;
+}
+input[name="check-fav"]{
+    accent-color: #008000; /*지정한 색이 짙으면 체크되는 색 라인이 연해지고 색이 연하면 체크되는 색 라인이 짙어짐 _ 선택되는 애들한테만 적용됨(라디오,체크박스)*/
+}
+input[name="gender"]{
+    accent-color: #008000;
+}
+label[for="check-04"]{
+    color: #fff000;
+}
