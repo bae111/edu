@@ -1,0 +1,12 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#tb-tag{
+    width: 800px;
+    margin: 0 auto;
+}
+table, td, th{
+    border: solid 1px #000;
+    border-collapse: collapse;
+}
