@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+#wrap{
+    width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+    height: 300vh;
+    font-size: 2em;
+    font-weight: bold;
+}
+#popup{
+    background-color: #ff0000;
+    color: #fff;
+    line-height: 100px;
+}
+/*먼저 했던 방식 : p와 span에 display: inline-block;을 줌*/
+/*header에 flex를 주어 header 안에 p와 span을 가로정렬,
+대신 이때는 span이 display: block; 상태여야 함.*/
+#wrap header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    color: #fff;
+    line-height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#wrap header p{}
+.transform{
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff000;
+    transition: all 1s ease-in-out;
+}
+#wrap header p:hover + .transform{
+    transform: translateX(100px) rotate(720deg);
+}
+.top-btn{
+    position: fixed;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 2em;
+    background-color: #333;
+    right: 5%;
+    bottom: 5%;
+    text-align: center;
+    line-height: 200px;
+}
